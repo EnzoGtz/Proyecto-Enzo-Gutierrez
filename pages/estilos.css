@@ -1,0 +1,165 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: aquamarine;
+}
+
+ /* ENCABEZADO */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 72px;
+    background-color: slateblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* LOGO DE ENCABEZADO Y ENLACES A OTRAS PÁGINAS */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 72px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+/* PARA MOBILE */
+@media only screen and ( max-width:600px) {
+    
+}
+
+@media (max-width:600px){
+
+
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    .discografia{
+        flex-direction: column;
+    }
+    .medio{
+        flex-direction: column;
+    }
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+}
+
+/* CONTENIDO IMAGEN + ESCRITOS */
+
+.medio{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.medio img{
+    height: auto;
+    width: auto;
+    max-width: 730px;
+    max-height: 430px;
+}
+
+p{
+    font-size: 20px
+}
+
+h2{
+    font-size: 30px;
+    justify-content: center;
+}
+
+/* HOME */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10 px;
+}
+
+/* CONCIERTOS */
+.tabla{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* DISCOGRAFÍA */
+
+.discografia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10 px;
+
+}
+
+/*COLABORACIONES*/
+.grid-layout{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 50%;
+    margin: 20px;
+    background-color: mediumpurple;
+    padding: 20px;
+    border: 1px solid black;
+
+}
+.caja img{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/*BIOGRAFÍA*/
+.texto{
+    min-width: 250px;
+    width: auto;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+
+/* Enlaces */
+.enlaces{
+    display: flex;
+    min-height: 15px;
+    background-color: slateblue;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.enlaces a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.enlaces a:hover{
+    color: white;
+}
+
+ 
