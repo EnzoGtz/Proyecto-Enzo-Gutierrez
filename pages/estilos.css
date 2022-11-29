@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: aquamarine;
+    background-image: linear-gradient(rgb(170, 245, 207), rgb(253, 114, 253));
 }
 
  /* ENCABEZADO */
@@ -78,10 +78,14 @@ ul{
 .medio img{
     height: auto;
     width: auto;
+    background-image: url(Conociendorus.jpg);
     max-width: 730px;
     max-height: 430px;
+    transition: 1s;
 }
-
+.medio img:hover{
+transform: scale(1.2,1.2);
+}
 p{
     font-size: 20px
 }
