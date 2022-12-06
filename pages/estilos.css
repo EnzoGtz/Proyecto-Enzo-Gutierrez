@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-image: linear-gradient(rgb(170, 245, 207), rgb(253, 114, 253));
+    background-image: linear-gradient(rgb(151, 207, 205), rgb(58, 44, 70));
 }
 
  /* ENCABEZADO */
@@ -17,6 +17,9 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* LOGO DE ENCABEZADO Y ENLACES A OTRAS PÁGINAS */
@@ -41,13 +44,7 @@ nav a:hover{
 }
 
 /* PARA MOBILE */
-@media only screen and ( max-width:600px) {
-    
-}
-
-@media (max-width:600px){
-
-
+@media (max-width:1000px){
     header{
         flex-direction: column;
     }
@@ -60,6 +57,9 @@ nav a:hover{
     .medio{
         flex-direction: column;
     }
+    .medio_home{
+        flex-direction: column;
+    }
 }
 
 ul{
@@ -68,21 +68,37 @@ ul{
     flex-wrap: wrap;   
 }
 
-/* CONTENIDO IMAGEN + ESCRITOS */
+/* CONTENIDO IMAGENES */
 
 .medio{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 40px;
+}
+.medio_home{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px;
 }
 .medio img{
-    height: auto;
-    width: auto;
+    width: 45%;
+    background-image: url(Conociendorus.jpg);
+    max-width: 800px;
+
+    transition: 0.5s;
+    margin: 40px;
+}
+.medio_home img{
+    width: 100%;
     background-image: url(Conociendorus.jpg);
     max-width: 730px;
-    max-height: 430px;
-    transition: 1s;
+
+    transition: 0.5s;
+    margin: 40px;
 }
+
 .medio img:hover{
 transform: scale(1.2,1.2);
 }
@@ -93,6 +109,7 @@ p{
 h2{
     font-size: 30px;
     justify-content: center;
+    padding-left: 35px;
 }
 
 /* HOME */
@@ -103,10 +120,37 @@ h2{
     align-items: center;
     padding: 10 px;
 }
+.p_home{
+    font-size: 23px;
+}
 
 /* CONCIERTOS */
 .tabla{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+
+}
+
+table{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse:collapse ;
+}
+thead{
+    background: rgba(243, 140, 210, 0.4);
+}
+th{
+    padding: 10px 20px ;
+    font-weight: 700;
+}
+td{
+    padding: 10px;
+    border-bottom:solid 1px rgba(255, 255, 255, 0.2); 
+}
+
+tbody tr:hover{
+    background: rgba(243, 140, 210, 0.4);
 
 }
 
@@ -116,26 +160,13 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10 px;
+    padding: 10px;
+    margin: 15px;
 
 }
-
-/*COLABORACIONES*/
-.grid-layout{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 50%;
-    margin: 20px;
-    background-color: mediumpurple;
-    padding: 20px;
-    border: 1px solid black;
-
-}
-.caja img{
-    width: auto;
-    height: auto;
-    max-width: 150px;
-    max-height: 150px;
+.discografia h3{
+    display: flex;
+    justify-content: center
 }
 
 /*BIOGRAFÍA*/
@@ -144,8 +175,12 @@ h2{
     width: auto;
     height: auto;
     margin-bottom: 25px;
+    
 }
-
+.text_bio{
+    border: solid 3px rgba(255, 255, 255, 0.2);
+    padding: 6px;
+}
 
 /* Enlaces */
 .enlaces{
